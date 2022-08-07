@@ -14,8 +14,7 @@ export default function App() {
       longUrl = url + event.target.value;
     }
     else{
-    setMessageTwo('NOT VALID URL');
-      
+    setMessageTwo('This is not a valid URL');
     }
     setMessage(event.target.value);
   };
@@ -38,7 +37,7 @@ export default function App() {
       }) 
       .then((data) => setData(data.result.full_short_link))
       .then(() => setIsSending(false));
-      setMessageTwo('wink')
+      setMessageTwo('Here is your new URL')
       setIsSending(false);
     }
     setIsSending(false);
