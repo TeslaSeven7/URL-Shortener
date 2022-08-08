@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://TeslaSeven7.github.io/URL-Shortener",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
