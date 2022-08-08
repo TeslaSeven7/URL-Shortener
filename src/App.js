@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const url = "https://api.shrtco.de/v2/shorten?url=";
 var longUrl;
+var regex= /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/
 export default function App() {
   
   const [message, setMessage] = useState('');
